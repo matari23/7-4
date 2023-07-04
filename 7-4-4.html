@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.6.4.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script lang="java">
+        $(function () {
+            // $("button").click(function(){
+            //     $(".page").toggle(1000, function(){
+            //         $(this).css("color","green")
+            //     })
+            // })
+            $("div").hover(function(){
+                $(this).animate({left:"500px"},"slow")
+            },function(){
+                $(this).animate({left:"0px"},"slow")
+
+            })
+        }) //jq
+    </script>
+
+    <style type="text/css">
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(45, 221, 147);
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button>toggle show</button>
+    <div class="page">
+        <h1>Elit at imperdiet dui accumsan sit.</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor
+            sit. Volutpat odio facilisis mauris sit amet massa.
+        </p>
+    </div> -->
+    <div></div> <div></div>
+    <div></div> <div></div>
+    <div></div> <div></div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.6.4.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script lang="java">
+        $(function(){
+            $("button").click(function(){
+                var bg_color = $(this).attr("bg");
+
+                $("body").css({background : bg_color})
+            })//click
+            $("div").hover(function(){
+                $(this).addClass("reverse",1000)
+            },function(){
+                $(this).removeClass("reverse",2000)
+
+            })
+        })//jq
+    </script>
+
+    <style type="text/css">
+        .reverse{
+            color: #fff;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button bg = "green">green</button>
+    <button bg = "blue">blue</button>
+    <button bg = "pink">pink</button>
+    <button bg = "coral">coral</button>
+    <button bg = "skyblue">skyblue</button>
+    <button bg = "lightgreen">lightgreen</button>
+
+    <div>
+        <h1>header1</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor
+            sit. Volutpat odio facilisis mauris sit amet massa.
+        </p>
+    </div>
+    <div>
+        <h1>header2</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor
+            sit. Volutpat odio facilisis mauris sit amet massa.
+        </p>
+    </div>
+    <div>
+        <h1>header3</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor
+            sit. Volutpat odio facilisis mauris sit amet massa.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.6.4.js"></script>
+    <script lang="java">
+        $(function(){
+            // var jobwidth = $("p").width();
+            // $("p").append(jobwidth);
+            
+            // $(window).resize(function(){
+            //     var jobwidth = $("p").width();
+            //     $("p").empty().append(jobwidth);
+                
+            // })//resize
+            var w = $(window).innerWidth();
+            $("p").append(w);
+
+            $(window).resize(function(){
+                re_s()
+            })//resize
+            function re_s(){
+                w = $(window).innerWidth();
+                $("p").empty().append(w);
+            }
+        })//jq
+    </script>
+
+    <style type="text/css">
+        p{
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border: 1px  solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+</body>
+</html>

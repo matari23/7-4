@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.6.4.js"></script>
+    <script lang="java">
+        $(function(){
+            $("#my_form").submit(function(){
+                var name = $("#name").val();
+                var pass = $("#pass").val();
+                alert(name + ":" + pass )
+                e.preventDefault();
+            })//submit
+            $("#all_check").change(function(){
+                if(this.checked){
+                    $("#check_item").children().prop("checked",true)
+                }else{
+                    $("#check_item").children().prop("checked",false)
+                }
+            })//change
+        })//jq
+    </script>
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+    <form action="#" id="my_form">
+        <table>
+            <tr>
+                <th>이름</th>
+                <td><input type="text" name="name" id="name"></td>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" name="pass" id="pass"></td>
+                </tr>
+            </tr>
+        </table>
+        <input type="submit" name="submit" id="submit" value="제출">
+    </form>
+    <input type="checkbox" id="all_check">
+    <label for="">All</label>
+    <div id="check_item">
+        <input type="checkbox">
+        <label for="">HTML</label>
+        <input type="checkbox">
+        <label for="">JavaScript</label>
+        <input type="checkbox">
+        <label for="">CSS</label>
+        <input type="checkbox">
+        <label for="">JQuery</label>
+    </div>
+</body>
+</html>

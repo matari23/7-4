@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.6.4.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script lang="java">
+        $(function(){
+            $("button").click(function(){
+                // $("img").slideToggle(2000, "linear")
+                // $("img").slideToggle(2000, "swing")
+                // $("img").slideToggle(2000, "easeInBounce")
+                // $("img").slideToggle(2000, "easeOutBounce")
+                // $("img").slideToggle(2000, "easeInOutBounce")
+                // $("img").slideToggle(2000, "easeInElastic")
+                $("img").slideToggle(2000, "easeInOutElastic")
+            })
+        })//jq
+    </script>
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <button>slide toggle</button>
+    <img src="imgs/003.jpg" alt="car">
+</body>
+</html>

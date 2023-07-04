@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.6.4.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <!-- script UI는 색상변화애니메이션, addClass removeClass애니메이션 기능 추가 할때 꼭 필요하다. -->
+    <script lang="java">
+        $(function(){
+            $("div").each(function(i){
+                $(this).delay(500*i).animate({left:"500px"},3000)
+            })//each
+        })//jq
+    </script>
+
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: thistle;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

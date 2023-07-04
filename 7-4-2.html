@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.6.4.js"></script>
+    <script lang="java">
+        $(function(){
+            // $("h1").click(() =>{
+            //     $(this).css("color","green") 
+            // }) click(() =>형식으로 쓰면 this사용불가
+            $("h1").click((event) =>{
+                $(event.currentTarget).css("color","green") 
+            })
+        })//jq
+    </script>
+
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <h1>header1</h1>
+    <h1>header2</h1>
+    <h1>header3</h1>
+    <h1>header4</h1>
+</body>
+</html>
